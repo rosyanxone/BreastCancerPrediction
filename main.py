@@ -19,8 +19,8 @@ def loadPage():
 
 
 
-@app.route("/", methods=['POST'])
-def cancerPrediction():
+@app.route("/predict", methods=['POST'])
+def predict():
     dataset_url = "https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv"
     df = pd.read_csv(dataset_url)
 
